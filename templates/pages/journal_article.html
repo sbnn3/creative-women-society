@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% set active = 'journal' %}
+{% block title %}{{ title }} — The Journal — Creative Women Society{% endblock %}
+{% block description %}{{ summary }}{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('{{ hero_image }}'); min-height:55vh;">
+  <div class="container">
+    <p class="eyebrow"><a href="{{ base_url }}journal/" style="color:inherit;">The Journal</a> &nbsp;/&nbsp; {{ category }}</p>
+    <h1>{{ title }}</h1>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="article-meta reveal">
+      <span>{{ category }}</span>
+      <span>&middot;</span>
+      <span>{{ reading_time }} read</span>
+      <span>&middot;</span>
+      <span>{{ date }}</span>
+    </div>
+    <div class="article-body reveal">
+      {{ body_html | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section-sm tint-blush text-center">
+  <div class="container reveal">
+    <p class="eyebrow" style="justify-content:center;">Continue Reading</p>
+    <div class="hero-actions">
+      <a href="{{ base_url }}journal/" class="btn btn-outline">Back to The Journal</a>
+      <a href="{{ base_url }}membership/#become-a-member" class="btn btn-primary">Become a Member</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
