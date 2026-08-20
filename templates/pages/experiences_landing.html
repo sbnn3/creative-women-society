@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% set active = 'experiences' %}
+{% block title %}Signature Experiences — Creative Women Society{% endblock %}
+{% block description %}The carefully curated experiences that define Creative Women Society — Arts & Culture, Literary Afternoons & Book Club, Society Gatherings, and Signature Journeys.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1775057962755-81d012c691ac?auto=format&fit=crop&w=1800&q=80');">
+  <div class="container">
+    <p class="eyebrow">Signature Experiences</p>
+    <h1>Every Experience, Carefully Curated</h1>
+    <p class="lede max-prose">At Creative Women Society, we believe that extraordinary experiences create extraordinary connections. Every experience is carefully designed to inspire, educate and bring women together through culture, meaningful conversations and shared moments.</p>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Creative Experience Framework</p>
+      <h2>Five Essential Elements</h2>
+      <p class="lede">Every Creative Women Society experience should inspire five essential elements.</p>
+    </div>
+    <div class="grid grid-3 reveal" style="grid-template-columns:repeat(5,1fr);">
+      <div class="value-item"><div class="value-icon">C</div><h3 style="font-size:1rem;">Connection</h3><p style="font-size:0.9rem;">Creating authentic relationships and a sense of belonging.</p></div>
+      <div class="value-item"><div class="value-icon">C</div><h3 style="font-size:1rem;">Culture</h3><p style="font-size:0.9rem;">Celebrating art, literature, history and lifelong learning.</p></div>
+      <div class="value-item"><div class="value-icon">I</div><h3 style="font-size:1rem;">Inspiration</h3><p style="font-size:0.9rem;">Discovering new ideas, perspectives and possibilities.</p></div>
+      <div class="value-item"><div class="value-icon">R</div><h3 style="font-size:1rem;">Reflection</h3><p style="font-size:0.9rem;">Leaving with meaningful conversations and personal growth.</p></div>
+      <div class="value-item"><div class="value-icon">M</div><h3 style="font-size:1rem;">Memory</h3><p style="font-size:0.9rem;">Creating moments that remain long after the experience has ended.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-blush">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Four Categories</p>
+      <h2>Explore the Categories</h2>
+    </div>
+
+    <div class="card-wide reveal" style="margin-bottom:var(--space-lg);">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?auto=format&fit=crop&w=800&q=80" alt="Arts & Culture"></div>
+      <div>
+        <p class="eyebrow">Arts &amp; Culture</p>
+        <h3>Celebrating Creativity</h3>
+        <p>To inspire women through creativity, culture and artistic expression. Experiences are designed to deepen cultural appreciation while encouraging conversation and shared discovery.</p>
+        <p style="opacity:0.75; font-size:0.92rem;">Theatre Evenings &middot; Opera &amp; Ballet &middot; Museum Visits &middot; Art Gallery Tours &middot; Painting &amp; Pottery Workshops &middot; Photography Walks &middot; Artist Talks &middot; Classical Music Concerts &middot; Heritage Experiences</p>
+        <a href="{{ base_url }}signature-experiences/arts-culture/" class="btn btn-outline">Discover More</a>
+      </div>
+    </div>
+
+    <div class="card-wide reveal" style="margin-bottom:var(--space-lg);">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1722182877533-7378b60bf1e8?auto=format&fit=crop&w=800&q=80" alt="Literary Afternoons & Book Club"></div>
+      <div>
+        <p class="eyebrow">Literary Afternoons &amp; Book Club</p>
+        <h3>Celebrating Ideas &amp; Conversation</h3>
+        <p>To celebrate literature, ideas and thoughtful conversations in an elegant and inspiring atmosphere. Reading becomes a shared experience that encourages curiosity, dialogue and lifelong learning.</p>
+        <p style="opacity:0.75; font-size:0.92rem;">Monthly Book Club &middot; Afternoon Tea &amp; Books &middot; Literary Conversations &middot; Author Talks &middot; Poetry Evenings &middot; Reading Circles &middot; British Literature Series &middot; Creative Writing Workshops</p>
+        <a href="{{ base_url }}signature-experiences/literary-afternoons-book-club/" class="btn btn-outline">Discover More</a>
+      </div>
+    </div>
+
+    <div class="card-wide reveal" style="margin-bottom:var(--space-lg);">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1785119774026-b6066d7835f5?auto=format&fit=crop&w=800&q=80" alt="Society Gatherings"></div>
+      <div>
+        <p class="eyebrow">Society Gatherings</p>
+        <h3>Elegant Social Occasions</h3>
+        <p>To create elegant social occasions where women connect through shared experiences, wellbeing and inspiring conversations. These gatherings celebrate friendship, beauty, hospitality and the joy of spending meaningful time together.</p>
+        <p style="opacity:0.75; font-size:0.92rem;">Afternoon Tea &middot; Fine Dining &middot; Garden Parties &middot; Christmas Gala &middot; Etiquette &amp; Beauty Workshops &middot; Spa Retreats &middot; Wine Tastings &middot; Fashion &amp; Style &middot; Personal Branding</p>
+        <a href="{{ base_url }}signature-experiences/society-gatherings/" class="btn btn-outline">Discover More</a>
+      </div>
+    </div>
+
+    <div class="card-wide reveal">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1759732029561-10c0d0198281?auto=format&fit=crop&w=800&q=80" alt="Signature Journeys"></div>
+      <div>
+        <p class="eyebrow">Signature Journeys</p>
+        <h3>Travel, Culture &amp; Discovery</h3>
+        <p>To create unforgettable journeys that combine travel, culture and discovery. Every journey is designed to become a memorable chapter in the life of the Society.</p>
+        <p style="opacity:0.75; font-size:0.92rem;">Oxford &middot; Cambridge &middot; Stonehenge &middot; The Cotswolds &middot; Bath &middot; Edinburgh &amp; the Scottish Highlands &middot; Hidden Britain &middot; Paris &middot; Venice &middot; Tuscany &middot; Norwegian Fjords</p>
+        <a href="{{ base_url }}signature-experiences/signature-journeys/" class="btn btn-outline">Discover More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-navy text-center">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <p class="eyebrow" style="justify-content:center;">Experience Design Standards</p>
+      <h2>What Makes an Experience "Signature"</h2>
+      <p style="opacity:0.85;">A distinctive title, a meaningful purpose, an elegant visual identity, a thoughtful atmosphere and — whenever possible — time for reflection at the close. Every Signature Experience is designed to be remembered, not simply attended.</p>
+      <a href="{{ base_url }}membership/#become-a-member" class="btn btn-gold">Become a Member</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
