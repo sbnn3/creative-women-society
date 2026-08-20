@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% set active = 'experiences' %}
+{% block title %}{{ category_name }} — Signature Experiences — Creative Women Society{% endblock %}
+{% block description %}{{ purpose }}{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('{{ hero_image }}');">
+  <div class="container">
+    <p class="eyebrow"><a href="{{ base_url }}signature-experiences/" style="color:inherit;">Signature Experiences</a> &nbsp;/&nbsp; {{ category_name }}</p>
+    <h1>{{ category_name }}</h1>
+    <p class="lede max-prose">{{ tagline }}</p>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="max-prose mx-auto text-center reveal" style="margin-bottom:var(--space-lg);">
+      <p class="eyebrow" style="justify-content:center;">Purpose</p>
+      <p style="font-size:1.15rem;">{{ purpose }}</p>
+    </div>
+
+    <div class="grid grid-2 reveal">
+      <div>
+        <h3>Experiences Include</h3>
+        <ul style="columns:2; gap:1.5rem;">
+          {% for item in examples %}
+          <li style="margin-bottom:0.6rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:var(--gold);">&mdash;</span>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Future Signature Experiences</h3>
+        <ul>
+          {% for item in future_items %}
+          <li style="margin-bottom:0.6rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:var(--gold);">&mdash;</span>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-blush text-center">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <p class="eyebrow" style="justify-content:center;">Featured</p>
+      <h2>{{ featured_title }}</h2>
+      <p>{{ featured_description }}</p>
+      <a href="{{ base_url }}signature-experiences/the-ritz-society-experience/" class="btn btn-primary">See a Sample Experience Page</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm tint-navy text-center">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <p style="opacity:0.85;">Explore the other Signature Experience categories, or discover how membership brings you closer to the Society's full programme.</p>
+      <div class="hero-actions">
+        <a href="{{ base_url }}signature-experiences/" class="btn btn-gold">All Categories</a>
+        <a href="{{ base_url }}membership/#become-a-member" class="btn btn-gold">Become a Member</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
