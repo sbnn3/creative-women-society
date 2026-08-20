@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% set active = '' %}
+{% block title %}{{ title }} — Creative Women Society{% endblock %}
+{% block description %}{{ title }} for Creative Women Society.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1780245992686-1f5c341655c2?auto=format&fit=crop&w=1800&q=80'); min-height:38vh;">
+  <div class="container">
+    <p class="eyebrow">Legal</p>
+    <h1>{{ title }}</h1>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="article-body">
+      <p style="font-size:0.85rem; color:var(--gold); text-transform:uppercase; letter-spacing:0.08em;">Draft — pending review by a qualified solicitor before publication. Last updated: 20 August 2026.</p>
+      {{ body_html | safe }}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
