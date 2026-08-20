@@ -293,7 +293,7 @@ p { margin: 0 0 var(--space-sm); }
   align-items: center;
   color: var(--pearl);
   background: linear-gradient(180deg, rgba(20,28,40,0.35) 0%, rgba(20,28,40,0.55) 60%, rgba(20,28,40,0.72) 100%),
-              url('https://images.unsplash.com/photo-1529154691717-3306083d869e?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+              url('https://images.unsplash.com/photo-1532509334149-d2130d74253c?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
 }
 .hero .container { position: relative; z-index: 2; text-align: center; }
 .hero-tag { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.1rem, 2vw, 1.4rem); margin-bottom: var(--space-xs); opacity: 0.95; }
