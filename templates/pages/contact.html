@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% set active = 'contact' %}
+{% block title %}Contact — Creative Women Society{% endblock %}
+{% block description %}We would love to hear from you — general enquiries, membership, partnerships and speaking invitations.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1780245992686-1f5c341655c2?auto=format&fit=crop&w=1800&q=80'); min-height:50vh;">
+  <div class="container">
+    <p class="eyebrow">Contact Us</p>
+    <h1>We Would Love to Hear From You</h1>
+    <p class="lede max-prose">Whether you would like to become a member, enquire about an upcoming experience, explore a collaboration or simply learn more about Creative Women Society, we would be delighted to hear from you.</p>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container grid grid-3 reveal">
+    <div class="text-center">
+      <p class="eyebrow" style="justify-content:center;">Become a Member</p>
+      <p style="opacity:0.85;">Learn more about membership and begin your journey with the Society.</p>
+      <a href="{{ base_url }}membership/#become-a-member" class="card-link">Explore Membership</a>
+    </div>
+    <div class="text-center">
+      <p class="eyebrow" style="justify-content:center;">Partnership Enquiries</p>
+      <p style="opacity:0.85;">Collaborate with Creative Women Society to create meaningful experiences.</p>
+      <a href="#contact-form" class="card-link">Partner With Us</a>
+    </div>
+    <div class="text-center">
+      <p class="eyebrow" style="justify-content:center;">General Enquiries</p>
+      <p style="opacity:0.85;">We are here to answer your questions and help you discover the Society.</p>
+      <a href="#contact-form" class="card-link">Let's Connect</a>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-blush">
+  <div class="container grid grid-2">
+    <div class="reveal">
+      <h3>Contact Information</h3>
+      <p><strong>Location</strong><br>London, United Kingdom</p>
+      <p><strong>Email</strong><br>
+        General enquiries: <a href="mailto:hello@creativewomensociety.com">hello@creativewomensociety.com</a><br>
+        Membership: <a href="mailto:membership@creativewomensociety.com">membership@creativewomensociety.com</a><br>
+        Partnerships: <a href="mailto:partnerships@creativewomensociety.com">partnerships@creativewomensociety.com</a>
+      </p>
+      <p><strong>Social Media</strong><br>Instagram &middot; Facebook &middot; LinkedIn</p>
+    </div>
+    <div class="reveal" id="contact-form">
+      <h3>Send a Message</h3>
+      <form class="form-grid" action="#" method="post" data-cws-form>
+        <div class="field"><label for="cFirst">First Name</label><input id="cFirst" name="firstName" type="text" required></div>
+        <div class="field"><label for="cLast">Last Name</label><input id="cLast" name="lastName" type="text" required></div>
+        <div class="field"><label for="cEmail">Email Address</label><input id="cEmail" name="email" type="email" required></div>
+        <div class="field"><label for="cPhone">Telephone (optional)</label><input id="cPhone" name="phone" type="tel"></div>
+        <div class="field full">
+          <label for="cSubject">Subject</label>
+          <select id="cSubject" name="subject">
+            <option>General Enquiry</option>
+            <option>Membership</option>
+            <option>Signature Experiences</option>
+            <option>Partnerships</option>
+            <option>Media</option>
+            <option>Speaking Invitation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field full"><label for="cMessage">Message</label><textarea id="cMessage" name="message" required></textarea></div>
+        <div class="field full"><button type="submit" class="btn btn-primary">Send Message</button></div>
+        <p class="form-note field full" style="display:none;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Frequently Asked Questions</p>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="max-prose mx-auto reveal">
+      <div class="faq-item">
+        <div class="faq-q">How can I become a member?</div>
+        <div class="faq-a"><p>Visit the Membership page and complete the Become a Member form — a member of the Society will be in touch.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How often do experiences take place?</div>
+        <div class="faq-a"><p>The Society offers a balanced calendar of Arts &amp; Culture, Literary, Society Gatherings and Signature Journeys experiences throughout the year.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I attend an experience before becoming a member?</div>
+        <div class="faq-a"><p>Some experiences are open to guests — please get in touch to ask about a specific event.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can organisations collaborate with Creative Women Society?</div>
+        <div class="faq-a"><p>Yes — the Society welcomes partnerships with cultural institutions, hospitality venues, publishers, charities and more. Use the form above with "Partnerships" as the subject.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How can I contribute to The Journal?</div>
+        <div class="faq-a"><p>Members may submit articles reflecting the Society's values. Get in touch to discuss a contribution.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm tint-navy text-center">
+  <div class="container reveal">
+    <p class="lede" style="color:var(--ivory); opacity:0.9;">Every meaningful connection begins with a conversation.</p>
+    <p style="opacity:0.85;">We look forward to welcoming you to Creative Women Society.</p>
+  </div>
+</section>
+
+{% endblock %}
