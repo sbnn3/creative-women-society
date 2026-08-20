@@ -1,0 +1,23 @@
+<header class="site-header{% if not is_home %} is-solid{% endif %}" id="siteHeader">
+  <div class="container">
+    <a href="{{ base_url }}" class="logo">
+      <strong>Creative Women Society</strong>
+      <span class="tag">A Society of Elegant Minds</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="{{ base_url }}" class="{% if active == 'home' %}active{% endif %}">Home</a></li>
+        <li><a href="{{ base_url }}signature-experiences/" class="{% if active == 'experiences' %}active{% endif %}">Signature Experiences</a></li>
+        <li><a href="{{ base_url }}the-society/" class="{% if active == 'society' %}active{% endif %}">The Society</a></li>
+        <li><a href="{{ base_url }}legacy/" class="{% if active == 'legacy' %}active{% endif %}">Legacy</a></li>
+        <li><a href="{{ base_url }}membership/" class="{% if active == 'membership' %}active{% endif %}">Membership</a></li>
+        <li><a href="{{ base_url }}journal/" class="{% if active == 'journal' %}active{% endif %}">The Journal</a></li>
+        <li><a href="{{ base_url }}contact/" class="{% if active == 'contact' %}active{% endif %}">Contact</a></li>
+        <li><a href="{{ base_url }}membership/#become-a-member" class="nav-cta">Become a Member</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
