@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+{% set active = 'home' %}
+{% set is_home = true %}
+
+{% block title %}Creative Women Society — A Society of Elegant Minds{% endblock %}
+{% block description %}A community where remarkable women come together through carefully curated experiences, culture, lifelong learning and meaningful relationships.{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-tag">A Society of Elegant Minds.</p>
+    <h1>Creative Women Society</h1>
+    <p class="hero-promise">Experience &nbsp;·&nbsp; Connect &nbsp;·&nbsp; Inspire &nbsp;·&nbsp; Leave a Legacy</p>
+    <p class="hero-intro">A community where remarkable women come together through carefully curated experiences, culture, lifelong learning and meaningful relationships.</p>
+    <div class="hero-actions">
+      <a href="{{ base_url }}membership/#become-a-member" class="btn btn-gold">Become a Member</a>
+      <a href="{{ base_url }}signature-experiences/" class="btn btn-gold">Explore Signature Experiences</a>
+    </div>
+  </div>
+  <span class="scroll-cue"></span>
+</section>
+
+<!-- Welcome -->
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Welcome</p>
+      <h2>Welcome to Creative Women Society</h2>
+    </div>
+    <div class="max-prose mx-auto reveal" style="text-align:center;">
+      <p>Creative Women Society brings together women who value culture, lifelong learning, meaningful relationships and personal growth.</p>
+      <p>Born from the remarkable community of Creative English Language Academy, the Society was established to strengthen the relationships that naturally developed beyond the classroom. As many women progressed in their professional lives, launched businesses, pursued new careers and discovered new passions, a shared desire emerged&mdash;to continue growing together through inspiring experiences and genuine human connection.</p>
+      <p>Today, Creative Women Society continues to welcome women who share these values and wish to become part of a carefully curated community where culture, elegance, learning and authentic relationships come together.</p>
+      <p>Rather than focusing on traditional networking, the Society creates extraordinary experiences that encourage conversation, inspiration and lasting friendships.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Signature Experiences -->
+<section class="section tint-blush">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Signature Experiences</p>
+      <h2>Four Ways to Belong</h2>
+      <p class="lede">Every experience is thoughtfully designed to enrich the mind, broaden perspectives and create memories that remain long after the experience has ended.</p>
+    </div>
+    <div class="grid grid-4 reveal">
+      <a href="{{ base_url }}signature-experiences/arts-culture/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?auto=format&fit=crop&w=500&q=80" alt="Arts & Culture — museum gallery interior" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Arts &amp; Culture</p>
+          <p>Celebrating creativity through theatre, opera, museums, galleries, workshops and cultural experiences.</p>
+          <span class="card-link">Discover More</span>
+        </div>
+      </a>
+      <a href="{{ base_url }}signature-experiences/literary-afternoons-book-club/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1722182877533-7378b60bf1e8?auto=format&fit=crop&w=500&q=80" alt="Literary Afternoons & Book Club — library shelves" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Literary Afternoons &amp; Book Club</p>
+          <p>Thought-provoking conversations inspired by books, literature and lifelong learning.</p>
+          <span class="card-link">Discover More</span>
+        </div>
+      </a>
+      <a href="{{ base_url }}signature-experiences/society-gatherings/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1785119774026-b6066d7835f5?auto=format&fit=crop&w=500&q=80" alt="Society Gatherings — elegant table setting" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Society Gatherings</p>
+          <p>Elegant social experiences designed to connect women through meaningful conversations, wellbeing and shared moments.</p>
+          <span class="card-link">Discover More</span>
+        </div>
+      </a>
+      <a href="{{ base_url }}signature-experiences/signature-journeys/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1759732029561-10c0d0198281?auto=format&fit=crop&w=500&q=80" alt="Signature Journeys — English manor house" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Signature Journeys</p>
+          <p>Extraordinary journeys carefully designed to combine travel, culture and unforgettable experiences.</p>
+          <span class="card-link">Discover More</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- This Month at the Society -->
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">This Month at the Society</p>
+      <h2>An Illustrative Look at the Programme</h2>
+      <p class="lede">A glimpse of the kind of experiences the Society curates throughout the year — the full calendar will grow as each Signature Experience is scheduled.</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1775057962755-81d012c691ac?auto=format&fit=crop&w=500&q=80" alt="The Ritz Society Experience" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Society Gatherings</p>
+          <h3>The Ritz Society Experience</h3>
+          <p>An afternoon of elegance, conversation and connection.</p>
+          <a href="{{ base_url }}signature-experiences/the-ritz-society-experience/" class="card-link">Reserve Your Place</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1607423730403-b7fc1eb83ce0?auto=format&fit=crop&w=500&q=80" alt="Literary Afternoon" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Literary Afternoons &amp; Book Club</p>
+          <h3>The Literary Afternoon</h3>
+          <p>A thoughtful gathering inspired by books, ideas and conversation.</p>
+          <a href="{{ base_url }}signature-experiences/literary-afternoons-book-club/" class="card-link">Reserve Your Place</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1759732029561-10c0d0198281?auto=format&fit=crop&w=500&q=80" alt="Oxford Heritage Journey" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Signature Journeys</p>
+          <h3>The Oxford Experience</h3>
+          <p>A day of heritage, architecture and shared discovery.</p>
+          <a href="{{ base_url }}signature-experiences/signature-journeys/" class="card-link">Reserve Your Place</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Society -->
+<section class="section tint-navy">
+  <div class="container split">
+    <div class="reveal">
+      <img src="https://images.unsplash.com/photo-1780245992686-1f5c341655c2?auto=format&fit=crop&w=800&q=80" alt="An elegant, warm interior reflecting the spirit of the Society">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">The Society</p>
+      <h2>Our Philosophy. Our Values. Our Purpose.</h2>
+      <p>At Creative Women Society, we believe that meaningful relationships are built through shared experiences. We value curiosity, elegance, culture, kindness and lifelong learning &mdash; and we create opportunities for women to connect, inspire one another and continue growing together.</p>
+      <a href="{{ base_url }}the-society/" class="btn btn-gold">Discover The Society</a>
+    </div>
+  </div>
+</section>
+
+<!-- Membership -->
+<section class="section tint-ivory">
+  <div class="container text-center">
+    <div class="max-prose mx-auto reveal">
+      <p class="eyebrow" style="justify-content:center;">Membership</p>
+      <h2>Why Belong?</h2>
+      <p class="lede">Membership is an invitation to belong.</p>
+      <p>Creative Women Society is a place where women connect through extraordinary experiences, inspiring conversations and authentic relationships. Members become part of a community that celebrates culture, lifelong learning, elegance and mutual support.</p>
+      <div class="hero-actions" style="margin-top:var(--space-md);">
+        <a href="{{ base_url }}membership/#become-a-member" class="btn btn-primary">Become a Member</a>
+        <a href="{{ base_url }}membership/" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Journal -->
+<section class="section tint-blush">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Journal</p>
+      <h2>Recent Reflections</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <a href="{{ base_url }}journal/an-editors-letter/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1607423730403-b7fc1eb83ce0?auto=format&fit=crop&w=500&q=80" alt="An Editor's Letter" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Conversations</p>
+          <h3>An Editor's Letter</h3>
+          <p>A short note from our founder — what's ahead, what has inspired her, and a thought for the community.</p>
+          <span class="card-link">Read More</span>
+        </div>
+      </a>
+      <a href="{{ base_url }}journal/the-quiet-power-of-lifelong-learning/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1620130674275-d709994ed7c8?auto=format&fit=crop&w=500&q=80" alt="The Quiet Power of Lifelong Learning" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Leadership</p>
+          <h3>The Quiet Power of Lifelong Learning</h3>
+          <p>Why curiosity, not certainty, is the most enduring form of confidence.</p>
+          <span class="card-link">Read More</span>
+        </div>
+      </a>
+      <a href="{{ base_url }}journal/the-art-of-the-afternoon/" class="card">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1769637565381-f21f88e7b4d6?auto=format&fit=crop&w=500&q=80" alt="The Art of the Afternoon" loading="lazy"></div>
+        <div class="card-body">
+          <p class="eyebrow">Elegant Living</p>
+          <h3>The Art of the Afternoon</h3>
+          <p>On the quiet ritual of afternoon tea, and why slowing down is a form of elegance.</p>
+          <span class="card-link">Read More</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Legacy -->
+<section class="section tint-navy text-center">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <p class="eyebrow" style="justify-content:center;">Legacy</p>
+      <h2>Creating memories. Inspiring women. Leaving a legacy.</h2>
+      <p style="opacity:0.85;">Every experience, conversation and connection contributes to the story of the Society — celebrated through Creative Women Stories, the Creative Women Awards and Creative Women Gives Back.</p>
+      <a href="{{ base_url }}legacy/" class="btn btn-gold">Discover Our Legacy</a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section-sm tint-ivory">
+  <div class="container newsletter reveal">
+    <p class="eyebrow" style="justify-content:center;">Stay Connected</p>
+    <h2>Stay Connected with the Society</h2>
+    <p class="max-prose mx-auto">Receive updates about upcoming experiences, Journal articles and Society news.</p>
+    <form class="newsletter-form" action="#" method="post" data-cws-form>
+      <input type="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <p class="form-note" style="display:none; margin-top:1rem; font-size:0.85rem; color:var(--gold);"></p>
+  </div>
+</section>
+
+{% endblock %}
