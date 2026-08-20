@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% set active = 'experiences' %}
+{% block title %}The Ritz Society Experience — Creative Women Society{% endblock %}
+{% block description %}An afternoon of elegance, conversation and connection at one of London's most iconic addresses.{% endblock %}
+
+{% block content %}
+
+<section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1775057962755-81d012c691ac?auto=format&fit=crop&w=1800&q=80'); min-height:72vh;">
+  <div class="container">
+    <p class="eyebrow"><a href="{{ base_url }}signature-experiences/society-gatherings/" style="color:inherit;">Society Gatherings</a></p>
+    <h1>The Ritz Society Experience</h1>
+    <p class="lede max-prose">An afternoon of elegance, conversation and connection.</p>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <p class="eyebrow" style="justify-content:center;">Description</p>
+      <p style="font-size:1.1rem; text-align:center;">A quintessentially British afternoon, set within one of London's most celebrated addresses. Members gather for afternoon tea, conversation and the particular kind of elegance that comes from simply slowing down together — a signature expression of everything Creative Women Society stands for.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-blush">
+  <div class="container grid grid-2">
+    <div class="reveal">
+      <h3>Why It Is Special</h3>
+      <p>The Ritz Society Experience is more than afternoon tea — it is a celebration of British hospitality, elegance and the pleasure of unhurried conversation. It is designed as a signature moment in the Society's calendar, one that new members often remember as their first true introduction to the community.</p>
+    </div>
+    <div class="reveal">
+      <h3>What to Expect</h3>
+      <p>A warm welcome, a beautifully set table, a curated selection of teas, sandwiches, scones and pastries, and the company of fellow members in an atmosphere of genuine conversation rather than networking. Time is left, quite deliberately, for nothing in particular.</p>
+    </div>
+    <div class="reveal">
+      <h3>Dress Code</h3>
+      <p>Smart elegant. Many members choose to make an occasion of it — this is, after all, an afternoon about refinement and care in the details.</p>
+    </div>
+    <div class="reveal">
+      <h3>Date &amp; Location</h3>
+      <p>Held periodically throughout the year in central London. Exact dates, times and booking details are announced to members ahead of each sitting, with places offered on a priority basis to Society members.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-ivory">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2>Moments from the Society</h2>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1769637565381-f21f88e7b4d6?auto=format&fit=crop&w=600&q=80" alt="Afternoon tea table setting"></div>
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1785119774026-b6066d7835f5?auto=format&fit=crop&w=600&q=80" alt="Elegant table with fine china"></div>
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1773244446961-ce8d730c3c1e?auto=format&fit=crop&w=600&q=80" alt="Teacup with blossom detail"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint-navy">
+  <div class="container quote-block reveal">
+    <blockquote>"An afternoon that reminded me why I joined — elegant, unhurried, and full of real conversation."</blockquote>
+    <cite>A Member Reflection</cite>
+  </div>
+</section>
+
+<section class="section-sm tint-blush text-center">
+  <div class="container">
+    <div class="max-prose mx-auto reveal">
+      <h2>Reserve Your Place</h2>
+      <p>Places at The Ritz Society Experience are offered on a priority basis to members. Enquire to be notified of the next sitting.</p>
+      <a href="{{ base_url }}contact/" class="btn btn-primary">Reserve Your Place</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
